@@ -1,14 +1,13 @@
-# API Basejump: Request Header Parser Microservice
-
-##User stories:
-I can get the IP address, language and operating system for my browser.
-
-### Example usage:
+# API Project: Request Header Parser Microservice
+## User Story:
+1. I can get the IP address, preferred languages (from header Accept-Language)
+and system infos (from header User-Agent) for my device.
+### Example Usage:
 ```text
-https://mtharmen-request-header-parser.herokuapp.com/
+/api/whoami
 ```
-
-### Example output:
+### Example Output:
 ```js
-{"ipaddress":"74.125.224.72","language":"en-US","software":"Windows NT 10.0; Win64; x64; rv:48.0"}
+{"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5",
+"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}
 ```
